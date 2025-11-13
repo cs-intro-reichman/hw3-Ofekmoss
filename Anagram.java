@@ -45,9 +45,7 @@ public class Anagram {
 	public static String preProcess(String str) {
 		String result = "";
 		for (char c : str.toLowerCase().toCharArray()) {
-			result += (c >= 'a' && c <= 'z') || c == ' ' ? c : "";
-			// The test was failed - but needed to be without spaces (The row below is for the other case)
-			// result += c >= 'a' && c <= 'z' ? c : "";
+			result += c >= 'a' && c <= 'z' ? c : "";
  		}
 		return result;
 	} 
